@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043CF3D91E35977A00CABD92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CF3D81E35977A00CABD92 /* AppDelegate.swift */; };
+		043CF3DB1E35977A00CABD92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CF3DA1E35977A00CABD92 /* ViewController.swift */; };
+		043CF3DE1E35977A00CABD92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043CF3DC1E35977A00CABD92 /* Main.storyboard */; };
+		043CF3E01E35977A00CABD92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043CF3DF1E35977A00CABD92 /* Assets.xcassets */; };
+		043CF3E31E35977A00CABD92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043CF3E11E35977A00CABD92 /* LaunchScreen.storyboard */; };
+		043CF3EE1E35977A00CABD92 /* SwifReactiveCocoa5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CF3ED1E35977A00CABD92 /* SwifReactiveCocoa5Tests.swift */; };
+		043CF3F91E35977A00CABD92 /* SwifReactiveCocoa5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CF3F81E35977A00CABD92 /* SwifReactiveCocoa5UITests.swift */; };
+		043CF4091E359BB900CABD92 /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CF4081E359BB900CABD92 /* RedView.swift */; };
+		7C0B24BD2311CD21C83FAAA7 /* Pods_SwifReactiveCocoa5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01846338EEC1CAF879B98730 /* Pods_SwifReactiveCocoa5.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		043CF3EA1E35977A00CABD92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043CF3CD1E35977A00CABD92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 043CF3D41E35977A00CABD92;
+			remoteInfo = SwifReactiveCocoa5;
+		};
+		043CF3F51E35977A00CABD92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043CF3CD1E35977A00CABD92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 043CF3D41E35977A00CABD92;
+			remoteInfo = SwifReactiveCocoa5;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01846338EEC1CAF879B98730 /* Pods_SwifReactiveCocoa5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwifReactiveCocoa5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		043CF3D51E35977A00CABD92 /* SwifReactiveCocoa5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwifReactiveCocoa5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043CF3D81E35977A00CABD92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		043CF3DA1E35977A00CABD92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		043CF3DD1E35977A00CABD92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		043CF3DF1E35977A00CABD92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		043CF3E21E35977A00CABD92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		043CF3E41E35977A00CABD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043CF3E91E35977A00CABD92 /* SwifReactiveCocoa5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwifReactiveCocoa5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043CF3ED1E35977A00CABD92 /* SwifReactiveCocoa5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifReactiveCocoa5Tests.swift; sourceTree = "<group>"; };
+		043CF3EF1E35977A00CABD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043CF3F41E35977A00CABD92 /* SwifReactiveCocoa5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwifReactiveCocoa5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043CF3F81E35977A00CABD92 /* SwifReactiveCocoa5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifReactiveCocoa5UITests.swift; sourceTree = "<group>"; };
+		043CF3FA1E35977A00CABD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043CF4081E359BB900CABD92 /* RedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
+		669A652DED5035EB99971FD5 /* Pods-SwifReactiveCocoa5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwifReactiveCocoa5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwifReactiveCocoa5/Pods-SwifReactiveCocoa5.debug.xcconfig"; sourceTree = "<group>"; };
+		78D0E4F75B177F19E75673D9 /* Pods-SwifReactiveCocoa5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwifReactiveCocoa5.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwifReactiveCocoa5/Pods-SwifReactiveCocoa5.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043CF3D21E35977A00CABD92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C0B24BD2311CD21C83FAAA7 /* Pods_SwifReactiveCocoa5.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043CF3E61E35977A00CABD92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043CF3F11E35977A00CABD92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043CF3CC1E35977A00CABD92 = {
+			isa = PBXGroup;
+			children = (
+				043CF3D71E35977A00CABD92 /* SwifReactiveCocoa5 */,
+				043CF3EC1E35977A00CABD92 /* SwifReactiveCocoa5Tests */,
+				043CF3F71E35977A00CABD92 /* SwifReactiveCocoa5UITests */,
+				043CF3D61E35977A00CABD92 /* Products */,
+				5729A976FBAFF19EED6A018E /* Pods */,
+				B8ABB23D606D89E8AA2EDE72 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		043CF3D61E35977A00CABD92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043CF3D51E35977A00CABD92 /* SwifReactiveCocoa5.app */,
+				043CF3E91E35977A00CABD92 /* SwifReactiveCocoa5Tests.xctest */,
+				043CF3F41E35977A00CABD92 /* SwifReactiveCocoa5UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		043CF3D71E35977A00CABD92 /* SwifReactiveCocoa5 */ = {
+			isa = PBXGroup;
+			children = (
+				043CF3D81E35977A00CABD92 /* AppDelegate.swift */,
+				043CF3DA1E35977A00CABD92 /* ViewController.swift */,
+				043CF3DC1E35977A00CABD92 /* Main.storyboard */,
+				043CF3DF1E35977A00CABD92 /* Assets.xcassets */,
+				043CF3E11E35977A00CABD92 /* LaunchScreen.storyboard */,
+				043CF3E41E35977A00CABD92 /* Info.plist */,
+				043CF4081E359BB900CABD92 /* RedView.swift */,
+			);
+			path = SwifReactiveCocoa5;
+			sourceTree = "<group>";
+		};
+		043CF3EC1E35977A00CABD92 /* SwifReactiveCocoa5Tests */ = {
+			isa = PBXGroup;
+			children = (
+				043CF3ED1E35977A00CABD92 /* SwifReactiveCocoa5Tests.swift */,
+				043CF3EF1E35977A00CABD92 /* Info.plist */,
+			);
+			path = SwifReactiveCocoa5Tests;
+			sourceTree = "<group>";
+		};
+		043CF3F71E35977A00CABD92 /* SwifReactiveCocoa5UITests */ = {
+			isa = PBXGroup;
+			children = (
+				043CF3F81E35977A00CABD92 /* SwifReactiveCocoa5UITests.swift */,
+				043CF3FA1E35977A00CABD92 /* Info.plist */,
+			);
+			path = SwifReactiveCocoa5UITests;
+			sourceTree = "<group>";
+		};
+		5729A976FBAFF19EED6A018E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				669A652DED5035EB99971FD5 /* Pods-SwifReactiveCocoa5.debug.xcconfig */,
+				78D0E4F75B177F19E75673D9 /* Pods-SwifReactiveCocoa5.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B8ABB23D606D89E8AA2EDE72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01846338EEC1CAF879B98730 /* Pods_SwifReactiveCocoa5.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		043CF3D41E35977A00CABD92 /* SwifReactiveCocoa5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043CF3FD1E35977A00CABD92 /* Build configuration list for PBXNativeTarget "SwifReactiveCocoa5" */;
+			buildPhases = (
+				5A0648A45362C2BF82CC9AA3 /* [CP] Check Pods Manifest.lock */,
+				043CF3D11E35977A00CABD92 /* Sources */,
+				043CF3D21E35977A00CABD92 /* Frameworks */,
+				043CF3D31E35977A00CABD92 /* Resources */,
+				096A1CBB7D0CC20B838597AD /* [CP] Embed Pods Frameworks */,
+				6218E462AAEB7635D58BC4AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwifReactiveCocoa5;
+			productName = SwifReactiveCocoa5;
+			productReference = 043CF3D51E35977A00CABD92 /* SwifReactiveCocoa5.app */;
+			productType = "com.apple.product-type.application";
+		};
+		043CF3E81E35977A00CABD92 /* SwifReactiveCocoa5Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043CF4001E35977A00CABD92 /* Build configuration list for PBXNativeTarget "SwifReactiveCocoa5Tests" */;
+			buildPhases = (
+				043CF3E51E35977A00CABD92 /* Sources */,
+				043CF3E61E35977A00CABD92 /* Frameworks */,
+				043CF3E71E35977A00CABD92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043CF3EB1E35977A00CABD92 /* PBXTargetDependency */,
+			);
+			name = SwifReactiveCocoa5Tests;
+			productName = SwifReactiveCocoa5Tests;
+			productReference = 043CF3E91E35977A00CABD92 /* SwifReactiveCocoa5Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		043CF3F31E35977A00CABD92 /* SwifReactiveCocoa5UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043CF4031E35977A00CABD92 /* Build configuration list for PBXNativeTarget "SwifReactiveCocoa5UITests" */;
+			buildPhases = (
+				043CF3F01E35977A00CABD92 /* Sources */,
+				043CF3F11E35977A00CABD92 /* Frameworks */,
+				043CF3F21E35977A00CABD92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043CF3F61E35977A00CABD92 /* PBXTargetDependency */,
+			);
+			name = SwifReactiveCocoa5UITests;
+			productName = SwifReactiveCocoa5UITests;
+			productReference = 043CF3F41E35977A00CABD92 /* SwifReactiveCocoa5UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043CF3CD1E35977A00CABD92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = MAC;
+				TargetAttributes = {
+					043CF3D41E35977A00CABD92 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					043CF3E81E35977A00CABD92 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 043CF3D41E35977A00CABD92;
+					};
+					043CF3F31E35977A00CABD92 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 043CF3D41E35977A00CABD92;
+					};
+				};
+			};
+			buildConfigurationList = 043CF3D01E35977A00CABD92 /* Build configuration list for PBXProject "SwifReactiveCocoa5" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 043CF3CC1E35977A00CABD92;
+			productRefGroup = 043CF3D61E35977A00CABD92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				043CF3D41E35977A00CABD92 /* SwifReactiveCocoa5 */,
+				043CF3E81E35977A00CABD92 /* SwifReactiveCocoa5Tests */,
+				043CF3F31E35977A00CABD92 /* SwifReactiveCocoa5UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043CF3D31E35977A00CABD92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043CF3E31E35977A00CABD92 /* LaunchScreen.storyboard in Resources */,
+				043CF3E01E35977A00CABD92 /* Assets.xcassets in Resources */,
+				043CF3DE1E35977A00CABD92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043CF3E71E35977A00CABD92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043CF3F21E35977A00CABD92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		096A1CBB7D0CC20B838597AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwifReactiveCocoa5/Pods-SwifReactiveCocoa5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A0648A45362C2BF82CC9AA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6218E462AAEB7635D58BC4AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwifReactiveCocoa5/Pods-SwifReactiveCocoa5-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043CF3D11E35977A00CABD92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043CF3DB1E35977A00CABD92 /* ViewController.swift in Sources */,
+				043CF4091E359BB900CABD92 /* RedView.swift in Sources */,
+				043CF3D91E35977A00CABD92 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043CF3E51E35977A00CABD92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043CF3EE1E35977A00CABD92 /* SwifReactiveCocoa5Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043CF3F01E35977A00CABD92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043CF3F91E35977A00CABD92 /* SwifReactiveCocoa5UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		043CF3EB1E35977A00CABD92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 043CF3D41E35977A00CABD92 /* SwifReactiveCocoa5 */;
+			targetProxy = 043CF3EA1E35977A00CABD92 /* PBXContainerItemProxy */;
+		};
+		043CF3F61E35977A00CABD92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 043CF3D41E35977A00CABD92 /* SwifReactiveCocoa5 */;
+			targetProxy = 043CF3F51E35977A00CABD92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		043CF3DC1E35977A00CABD92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043CF3DD1E35977A00CABD92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		043CF3E11E35977A00CABD92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043CF3E21E35977A00CABD92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		043CF3FB1E35977A00CABD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		043CF3FC1E35977A00CABD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		043CF3FE1E35977A00CABD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 669A652DED5035EB99971FD5 /* Pods-SwifReactiveCocoa5.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwifReactiveCocoa5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fzf.SwifReactiveCocoa5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		043CF3FF1E35977A00CABD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D0E4F75B177F19E75673D9 /* Pods-SwifReactiveCocoa5.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwifReactiveCocoa5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fzf.SwifReactiveCocoa5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		043CF4011E35977A00CABD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwifReactiveCocoa5Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fzf.SwifReactiveCocoa5Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwifReactiveCocoa5.app/SwifReactiveCocoa5";
+			};
+			name = Debug;
+		};
+		043CF4021E35977A00CABD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwifReactiveCocoa5Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fzf.SwifReactiveCocoa5Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwifReactiveCocoa5.app/SwifReactiveCocoa5";
+			};
+			name = Release;
+		};
+		043CF4041E35977A00CABD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SwifReactiveCocoa5UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fzf.SwifReactiveCocoa5UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SwifReactiveCocoa5;
+			};
+			name = Debug;
+		};
+		043CF4051E35977A00CABD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SwifReactiveCocoa5UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fzf.SwifReactiveCocoa5UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SwifReactiveCocoa5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043CF3D01E35977A00CABD92 /* Build configuration list for PBXProject "SwifReactiveCocoa5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043CF3FB1E35977A00CABD92 /* Debug */,
+				043CF3FC1E35977A00CABD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043CF3FD1E35977A00CABD92 /* Build configuration list for PBXNativeTarget "SwifReactiveCocoa5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043CF3FE1E35977A00CABD92 /* Debug */,
+				043CF3FF1E35977A00CABD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043CF4001E35977A00CABD92 /* Build configuration list for PBXNativeTarget "SwifReactiveCocoa5Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043CF4011E35977A00CABD92 /* Debug */,
+				043CF4021E35977A00CABD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043CF4031E35977A00CABD92 /* Build configuration list for PBXNativeTarget "SwifReactiveCocoa5UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043CF4041E35977A00CABD92 /* Debug */,
+				043CF4051E35977A00CABD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 043CF3CD1E35977A00CABD92 /* Project object */;
+}

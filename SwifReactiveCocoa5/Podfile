@@ -1,0 +1,9 @@
+
+  platform :ios, '9.0'
+  use_frameworks!
+
+target 'SwifReactiveCocoa5' do
+
+	pod 'ReactiveCocoa', '5.0.0-alpha.3'
+
+end
