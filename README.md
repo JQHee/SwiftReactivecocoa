@@ -219,3 +219,29 @@ import ReactiveSwift
     
     }
 ```
+
+### 10、其他事件绑定
+```
+// UI绑定到Model  
+Signal.combineLatest(uerNameTF1.reactive.continuousTextValues,passwordTF1.reactive.continuousTextValues).observeValues { (name, password) in
+//print("name = \(name) + password = \(password)")
+}
+
+// 当输入框的两个值长度都大于或者等于6，按钮才可以点击
+Signal.combineLatest(uerNameTF1.reactive.continuousTextValues,passwordTF1.reactive.continuousTextValues).map { (name, password) -> Bool in
+return ((name?.characters.count)! >= 6 && (password?.characters.count)! >= 6)
+}.observeValues { [weak self](value) in
+print("合并\(value)")
+self?.loginBtn.isEnabled = value
+}
+
+// 参数省略        
+Signal.combineLatest(uerNameTF1.reactive.continuousTextValues,passwordTF1.reactive.continuousTextValues).map { $0?.characters.count ?? 0 >= 6 && $1?.characters.count ?? 0 >= 6
+}.observeValues { [weak self](value) in
+print("合并\(value)")
+self?.loginBtn.isEnabled = value
+}
+
+loginBtn.reactive.isEnabled <~ Signal.combineLatest(uerNameTF1.reactive.continuousTextValues,passwordTF1.reactive.continuousTextValues).map { $0?.characters.count ?? 0 >= 6 && $1?.characters.count ?? 0 >= 6
+}
+```
