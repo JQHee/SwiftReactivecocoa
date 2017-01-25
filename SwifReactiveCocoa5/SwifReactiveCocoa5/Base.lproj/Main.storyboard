@@ -58,22 +58,57 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYf-IB-X82">
+                                <rect key="frame" x="34" y="375" width="313" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BMv-5y-Wst">
+                                <rect key="frame" x="34" y="413" width="313" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOp-eb-zYD">
+                                <rect key="frame" x="43" y="468" width="304" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tWF-iL-hDq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="loginBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qtt-Er-T7p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="iQM-Kp-fy8" secondAttribute="trailing" constant="54" id="1Ac-k8-gvF"/>
+                            <constraint firstAttribute="trailing" secondItem="xYf-IB-X82" secondAttribute="trailing" constant="12" id="38o-EW-0Cu"/>
+                            <constraint firstAttribute="trailing" secondItem="BMv-5y-Wst" secondAttribute="trailing" constant="12" id="Fyc-Rk-780"/>
+                            <constraint firstItem="zOp-eb-zYD" firstAttribute="top" secondItem="BMv-5y-Wst" secondAttribute="bottom" constant="25" id="KqJ-fF-h1D"/>
                             <constraint firstItem="iQM-Kp-fy8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="27" id="Ofo-L7-Pfo"/>
+                            <constraint firstItem="zOp-eb-zYD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="27" id="RZz-sO-yU2"/>
                             <constraint firstItem="HJD-FZ-DUz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RvB-iz-SeS"/>
+                            <constraint firstItem="BMv-5y-Wst" firstAttribute="top" secondItem="xYf-IB-X82" secondAttribute="bottom" constant="8" id="S9X-i9-v5C"/>
+                            <constraint firstItem="xYf-IB-X82" firstAttribute="top" secondItem="SEY-fB-aoP" secondAttribute="bottom" constant="59" id="Xz1-0R-rqo"/>
                             <constraint firstItem="SEY-fB-aoP" firstAttribute="top" secondItem="HJD-FZ-DUz" secondAttribute="bottom" constant="52" id="b8u-kl-5tN"/>
                             <constraint firstItem="SEY-fB-aoP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="164" id="cyi-R7-DKD"/>
+                            <constraint firstAttribute="trailing" secondItem="zOp-eb-zYD" secondAttribute="trailing" constant="12" id="dUt-xi-X4r"/>
+                            <constraint firstItem="BMv-5y-Wst" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="18" id="op5-4k-UWf"/>
                             <constraint firstItem="iQM-Kp-fy8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="pzT-W2-lC8"/>
+                            <constraint firstItem="xYf-IB-X82" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="18" id="rMe-tV-TVK"/>
                             <constraint firstItem="HJD-FZ-DUz" firstAttribute="top" secondItem="iQM-Kp-fy8" secondAttribute="bottom" constant="38" id="vUd-y5-jc3"/>
                             <constraint firstAttribute="trailing" secondItem="SEY-fB-aoP" secondAttribute="trailing" constant="165" id="yS5-XI-z4n"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginBtn" destination="zOp-eb-zYD" id="Z2v-CF-VvO"/>
+                        <outlet property="passwordTF1" destination="BMv-5y-Wst" id="pIb-tD-ToZ"/>
                         <outlet property="redView" destination="HJD-FZ-DUz" id="KbY-aP-38g"/>
                         <outlet property="testBtn" destination="SEY-fB-aoP" id="bcc-0I-tD9"/>
+                        <outlet property="uerNameTF1" destination="xYf-IB-X82" id="cmz-Ef-DXx"/>
                         <outlet property="userNameTF" destination="iQM-Kp-fy8" id="IN1-e3-lMW"/>
                     </connections>
                 </viewController>

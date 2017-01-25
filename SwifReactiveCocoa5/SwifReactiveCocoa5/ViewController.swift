@@ -8,16 +8,22 @@
 
 import UIKit
 import Foundation
-import ReactiveCocoa
-import Result
 import ReactiveSwift // Sinal
+import ReactiveCocoa
+import enum Result.NoError
 
 class ViewController: UIViewController {
+
     
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var redView: RedView!
     @IBOutlet weak var testBtn: UIButton!
 
+    @IBOutlet weak var passwordTF1: UITextField!
+    @IBOutlet weak var uerNameTF1: UITextField!
+    @IBOutlet weak var loginBtn: UIButton!
+    fileprivate var testMD: TestMD? = TestMD()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //testTF()
@@ -26,7 +32,52 @@ class ViewController: UIViewController {
         //testScheduler()
         //testKVO()
         //testGes()
-        testDelegate()
+        //testDelegate()
+        viewBindEvents()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        testMD?.name = "hjq"
+    }
+    
+    
+    func viewBindEvents() {
+        // 2.通过管道创建热信号
+        // UI绑定到Model
+        Signal.combineLatest(uerNameTF1.reactive.continuousTextValues,passwordTF1.reactive.continuousTextValues).observeValues { (name, password) in
+            //print("name = \(name) + password = \(password)")
+        }
+        
+        // 当输入框的两个值长度都大于或者等于6，按钮才可以点击
+        Signal.combineLatest(uerNameTF1.reactive.continuousTextValues,passwordTF1.reactive.continuousTextValues).map { (name, password) -> Bool in
+            return ((name?.characters.count)! >= 6 && (password?.characters.count)! >= 6)
+        }.observeValues { [weak self](value) in
+            print("合并\(value)")
+            self?.loginBtn.isEnabled = value
+        }
+        
+        // 参数省略
+        Signal.combineLatest(uerNameTF1.reactive.continuousTextValues,passwordTF1.reactive.continuousTextValues).map { $0?.characters.count ?? 0 >= 6 && $1?.characters.count ?? 0 >= 6
+            }.observeValues { [weak self](value) in
+                print("合并\(value)")
+                self?.loginBtn.isEnabled = value
+        }
+        
+        loginBtn.reactive.isEnabled <~ Signal.combineLatest(uerNameTF1.reactive.continuousTextValues,passwordTF1.reactive.continuousTextValues).map { $0?.characters.count ?? 0 >= 6 && $1?.characters.count ?? 0 >= 6
+        }
+        
+        let resultUIBind = testMD?.reactive.values(forKeyPath: "name").map{$0}
+        
+//       uerNameTF1.text <~ resultUIBind
+        
+//        uerNameTF1.reactive.text <~ Signal
+//        passwordTF1.reactive.text <~ testViewModel.password
+//        
+//        testViewModel.username <~ uerNameTF1.reactive.continuousTextValues
+//            .map { $0!.trimmingCharacters(in: .whitespacesAndNewlines) }
+//        testViewModel.password <~  passwordTF1.reactive.continuousTextValues
+//            .map { $0!.trimmingCharacters(in: .whitespacesAndNewlines) }
+        
     }
     
     // MARK: - 0.创建信号的方法
@@ -203,6 +254,11 @@ class ViewController: UIViewController {
             print("\(key) + \(value)")
         }
     
+    }
+    
+    // MARK: - 按钮Click
+    @IBAction func loginBtnClick(_ sender: Any) {
+        print("按钮被点击了")
     }
     
 

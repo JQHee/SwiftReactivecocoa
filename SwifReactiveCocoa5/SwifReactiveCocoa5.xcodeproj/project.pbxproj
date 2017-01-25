@@ -15,6 +15,7 @@
 		043CF3EE1E35977A00CABD92 /* SwifReactiveCocoa5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CF3ED1E35977A00CABD92 /* SwifReactiveCocoa5Tests.swift */; };
 		043CF3F91E35977A00CABD92 /* SwifReactiveCocoa5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CF3F81E35977A00CABD92 /* SwifReactiveCocoa5UITests.swift */; };
 		043CF4091E359BB900CABD92 /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CF4081E359BB900CABD92 /* RedView.swift */; };
+		045DBB361E384C99006DE698 /* TestMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DBB351E384C99006DE698 /* TestMD.swift */; };
 		7C0B24BD2311CD21C83FAAA7 /* Pods_SwifReactiveCocoa5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01846338EEC1CAF879B98730 /* Pods_SwifReactiveCocoa5.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		043CF3F81E35977A00CABD92 /* SwifReactiveCocoa5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifReactiveCocoa5UITests.swift; sourceTree = "<group>"; };
 		043CF3FA1E35977A00CABD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043CF4081E359BB900CABD92 /* RedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
+		045DBB351E384C99006DE698 /* TestMD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMD.swift; sourceTree = "<group>"; };
 		669A652DED5035EB99971FD5 /* Pods-SwifReactiveCocoa5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwifReactiveCocoa5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwifReactiveCocoa5/Pods-SwifReactiveCocoa5.debug.xcconfig"; sourceTree = "<group>"; };
 		78D0E4F75B177F19E75673D9 /* Pods-SwifReactiveCocoa5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwifReactiveCocoa5.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwifReactiveCocoa5/Pods-SwifReactiveCocoa5.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 				043CF3E11E35977A00CABD92 /* LaunchScreen.storyboard */,
 				043CF3E41E35977A00CABD92 /* Info.plist */,
 				043CF4081E359BB900CABD92 /* RedView.swift */,
+				045DBB351E384C99006DE698 /* TestMD.swift */,
 			);
 			path = SwifReactiveCocoa5;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045DBB361E384C99006DE698 /* TestMD.swift in Sources */,
 				043CF3DB1E35977A00CABD92 /* ViewController.swift in Sources */,
 				043CF4091E359BB900CABD92 /* RedView.swift in Sources */,
 				043CF3D91E35977A00CABD92 /* AppDelegate.swift in Sources */,
