@@ -22,7 +22,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTF1: UITextField!
     @IBOutlet weak var uerNameTF1: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
-    fileprivate var testMD: TestMD? = TestMD()
+    fileprivate var testMD: TestMD = TestMD()
+    public var age: NSInteger! = 10
+    
+    struct Person {
+        var name: String?
+        var age: NSInteger?
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +39,13 @@ class ViewController: UIViewController {
         //testKVO()
         //testGes()
         //testDelegate()
-        viewBindEvents()
+        //viewBindEvents()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        testMD?.name = "hjq"
+        testMD.name = "hjq"
+        age = age + 10
+        //self.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - 10)
     }
     
     
@@ -66,12 +74,14 @@ class ViewController: UIViewController {
         loginBtn.reactive.isEnabled <~ Signal.combineLatest(uerNameTF1.reactive.continuousTextValues,passwordTF1.reactive.continuousTextValues).map { $0?.characters.count ?? 0 >= 6 && $1?.characters.count ?? 0 >= 6
         }
         
-        let resultUIBind = testMD?.reactive.values(forKeyPath: "name").map{$0}
-        
-//       uerNameTF1.text <~ resultUIBind
-        
-//        uerNameTF1.reactive.text <~ Signal
-//        passwordTF1.reactive.text <~ testViewModel.password
+        let resultUIBind = self.testMD.reactive.values(forKeyPath: "name").map{$0}
+        resultUIBind.start({ (value) in
+            print(value)
+        })
+        uerNameTF1.reactive.text <~ userNameTF.reactive.continuousTextValues
+        uerNameTF1.reactive.continuousTextValues.observeValues { [weak self](value) in
+            self?.testMD.name = value
+        }
 //        
 //        testViewModel.username <~ uerNameTF1.reactive.continuousTextValues
 //            .map { $0!.trimmingCharacters(in: .whitespacesAndNewlines) }
@@ -220,9 +230,8 @@ class ViewController: UIViewController {
     
     // MARK: - 9.KVO
     func testKVO() {
-        let result = self.view.reactive.values(forKeyPath: "bounds")
+        let result = self.reactive.values(forKeyPath: "frame")
         result.start { [weak self](rect) in
-            print(self?.view ?? "")
             print(rect)
         }
     }
