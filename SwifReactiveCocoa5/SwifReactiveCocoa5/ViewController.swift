@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        testMD.name = "hjq"
+        testMD.name = MutableProperty<String>("hjq")
         age = age + 10
         //self.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - 10)
     }
@@ -74,14 +74,18 @@ class ViewController: UIViewController {
         loginBtn.reactive.isEnabled <~ Signal.combineLatest(uerNameTF1.reactive.continuousTextValues,passwordTF1.reactive.continuousTextValues).map { $0?.characters.count ?? 0 >= 6 && $1?.characters.count ?? 0 >= 6
         }
         
-        let resultUIBind = self.testMD.reactive.values(forKeyPath: "name").map{$0}
-        resultUIBind.start({ (value) in
-            print(value)
-        })
-        uerNameTF1.reactive.text <~ userNameTF.reactive.continuousTextValues
-        uerNameTF1.reactive.continuousTextValues.observeValues { [weak self](value) in
-            self?.testMD.name = value
+        let (signal, _) = Signal<String, NoError>.pipe()
+        uerNameTF1.reactive.text <~ signal
+        signal.observeValues { (value) in
+            
         }
+        
+        uerNameTF1.reactive.text <~ testMD.name
+//        
+//        resultSignal.start({ (value) in
+//            print(value)
+//        })
+        uerNameTF1.reactive.text <~ userNameTF.reactive.continuousTextValues
 //        
 //        testViewModel.username <~ uerNameTF1.reactive.continuousTextValues
 //            .map { $0!.trimmingCharacters(in: .whitespacesAndNewlines) }

@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import ReactiveCocoa
+import ReactiveSwift
 
 class TestMD: NSObject {
-    var name: String! = ""
+    var name = MutableProperty<String>("")
 }
