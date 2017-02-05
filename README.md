@@ -244,4 +244,20 @@ self?.loginBtn.isEnabled = value
 
 loginBtn.reactive.isEnabled <~ Signal.combineLatest(uerNameTF1.reactive.continuousTextValues,passwordTF1.reactive.continuousTextValues).map { $0?.characters.count ?? 0 >= 6 && $1?.characters.count ?? 0 >= 6
 }
+`
+class ViewModel {
+    var username: MutableProperty<String>
+    var password: MutableProperty<String>
+    var loginEnabled: Property<Bool>
+
+    // This can be done in a different spot, or init can be made to take initial values as parameters, or whatever...
+    init() {
+        userName = MutableProperty("")
+        password = MutableProperty("")
+
+        // I'm pretty sure the below code is incorrect, but I'm sure you get the idea that we're creating a "calculated, read-only property" out of the above two.
+        loginEnabled = .combineLatest(userName.producer, password.producer).map { $0.0.characters.count > 0 && $0.1.characters.count > 0 }
+    }
+}
+`
 ```
