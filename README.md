@@ -188,6 +188,9 @@ import ReactiveSwift
         }
     }
 ```
+```
+DynamicProperty(object: self.view, keyPath: "...") gives a MutableProperty like experience on top of values(forKeyPath:).
+```
 ### 9.迭代器
 ```
 // MARK: - 10.迭代器
